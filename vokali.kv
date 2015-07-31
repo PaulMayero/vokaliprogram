@@ -1,0 +1,356 @@
+
+MainMenuRoot:
+
+<MainMenuRoot>:
+    MainMenuForm
+
+<MainMenuForm>:
+    orientation:'vertical'
+    padding:"50dp"
+	spacing:30
+
+    BoxLayout:
+		orientation:"vertical"
+	    height:"40dp"
+		size_hint_y:.75
+		padding:10
+        Button:
+            text:"Vokali"
+			size_hint:1,1
+            background_color:.7,.7,1,1
+			on_press:app.root.view_switching_to_swahilivowels()
+			
+			
+				
+            
+			
+		Button:
+		    text:"Herufi"
+			size_hint:1,1
+			background_color:.7,.7,1,1
+			on_press:app.root.view_switching_to_herufi()
+		Button:
+			text:"maneno"
+			size_hint:1,1
+			background_color:.7,.7,1,1
+			on_press:app.root.view_switching_to_maneno()
+		
+			
+		
+			
+            
+
+<swahilivowels>:
+    orientation:'vertical'
+	
+	
+	StackLayout:
+		orientation:'lr-tb'
+		padding:10
+		spacing:5
+	    Button:
+		    text:"a"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_vowels('a')
+		Button:
+		    text:"e"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_vowels('e')
+		Button:
+		    text:"i"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_vowels('i')
+		Button:
+		    text:"o"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_vowels('o')
+		Button:
+		    text:"u"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_vowels('u')
+	
+	BoxLayout:
+	    Button:
+	        height: "40dp"
+            size_hint_y: None
+            text: "Rudi"
+			on_press:root.view_switching_to_mainmenu1()
+        
+
+<herufi>
+    orientation:'vertical'
+	
+	
+	StackLayout:
+		orientation:'lr-tb'
+		padding:10
+		spacing:5
+	    
+		Button:
+		    text:"a"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('a')
+		Button:
+		    text:"b"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('b')
+		Button:
+		    text:"c"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('c')
+		Button:
+		    text:"d"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('d')
+		Button:
+		    text:"e"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('e')
+		Button:
+			text:"f"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('f')
+		Button:
+		    text:"g"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('g')
+		Button:
+		    text:"h"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('h')
+		Button:
+		    text:"i"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('i')
+		Button:
+		    text:"j"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('j')
+		Button:
+		    text:"k"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('k')
+		Button:
+		    text:"l"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('l')
+		Button:
+		    text:"m"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('m')
+		Button:
+		    text:"n"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('n')
+		Button:
+		    text:"o"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('o')
+		Button:
+		    text:"p"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('p')
+		Button:
+		    text:"r"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('r')
+		Button:
+		    text:"s"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('s')
+		Button:
+		    text:"t"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('t')
+		Button:
+		    text:"u"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('u')
+		Button:
+		    text:"v"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('v')
+		Button:
+		    text:"w"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('w')
+		Button:
+		    text:"y"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('y')
+		Button:
+		    text:"z"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_letters('z')
+	BoxLayout:
+	    Button:
+	        height: "40dp"
+            size_hint_y: None
+            text: "Rudi"
+			on_press:root.view_switching_to_mainmenu()
+		   
+	
+<maneno>
+	StackLayout:
+		orientation:'lr-tb'
+		padding:10
+		spacing:5
+	    Button:
+		    text:"a"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('a')
+		Button:
+		    text:"b"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('b')
+		Button:
+		    text:"c"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('c')
+		Button:
+		    text:"d"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('d')
+		Button:
+		    text:"e"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('e')
+		Button:
+			text:"f"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('f')
+		Button:
+		    text:"g"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('g')
+		Button:
+		    text:"h"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('h')
+		Button:
+		    text:"i"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('i')
+		Button:
+		    text:"j"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('j')
+		Button:
+		    text:"k"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('k')
+		Button:
+		    text:"l"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('l')
+		Button:
+		    text:"m"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('m')
+		Button:
+		    text:"n"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('n')
+		Button:
+		    text:"o"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('o')
+		Button:
+		    text:"p"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('p')
+		Button:
+		    text:"r"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('r')
+		Button:
+		    text:"s"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('s')
+		Button:
+		    text:"t"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('t')
+		Button:
+		    text:"u"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('u')
+		Button:
+		    text:"v"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('v')
+		Button:
+		    text:"w"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('w')
+		Button:
+		    text:"y"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('y')
+		Button:
+		    text:"z"
+			size_hint:root.xhint,root.yhint
+			background_color:.7,.7,1,1
+			on_press:app.root.popup_words('z')
+	
+						
+		
+	BoxLayout:
+	    Button:
+	
+	        height: "40dp"
+            size_hint_y: None
+            text: "Rudi"
+			on_press:root.view_switching_to_mainmenu()

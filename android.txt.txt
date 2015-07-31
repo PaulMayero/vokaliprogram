@@ -1,0 +1,3 @@
+title=BasicEducationalApp
+author=PMM
+orientation=landscape
